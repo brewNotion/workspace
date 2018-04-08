@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="myScript.js"></script>
+    <script>
+        var url = "myJsonFile.json";
+        function callback1(response){
+            var botNames = JSON.parse(response)
+            var keys = Object.keys(botNames);
+            var randomProperty = keys[Math.floor(keys.length*Math.random())]
+            var botName = botNames[randomProperty]
+            console.log(botName);
+        }
+        loadJSON(callback1,url);
+    </script>
+</head>
+<body>
+<h1>Index.html</h1>
+</body>

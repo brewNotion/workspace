@@ -1,0 +1,13 @@
+
+Where is the data json data ?
+
+Are you running it in a server ?
+locally ?
+File system?
+html??
+
+myJon.json file should contain a JsonObject, array or literal
+
+Math.random returns a double value with high precisions within the range 0 <= Math.random() < 1
+
+check if property exits
