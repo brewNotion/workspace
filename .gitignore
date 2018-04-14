@@ -1,5 +1,9 @@
+#scala
 .idea
 /target/
 target/
 /out/
 *.iml
+
+#jupyter
+.ipynb_checkpoints
