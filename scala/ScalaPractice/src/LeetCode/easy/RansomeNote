@@ -1,0 +1,14 @@
+
+
+object RansomeNote extends App {
+  def canConstruct(ransomNote: String, magazine: String): Boolean = {
+    var lu = scala.collection.immutable.Map
+
+    for(word <- magazine){
+      lu += (word -> lu.get(word) match {
+        case w => w+1
+        case None => 1
+      })
+    }
+  }
+}
