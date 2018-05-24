@@ -1,0 +1,61 @@
+import scala.io.StdIn._
+import scala.collection.mutable.ArrayBuffer
+object HelloWorld {
+    def main(args: Array[String]) {
+
+        var line = readLine.split(" ")
+        var (n,x) = (line(0).toInt, line(1).toInt)
+
+
+        val rangeSum:ArrayBuffer[Long] =  new ArrayBuffer[Long]()
+        var lastSum = 0
+        while(n>0){
+            line = readLine.split(" ")
+            lastSum += line(1).toInt - line(0).toInt + 1
+            rangeSum.append(lastSum)
+            n -= 1
+        }
+
+        while(q>0){
+            q -= 1
+        }
+    }
+    def binarySearch(ar:Array[Long], value:Long):Long = {
+
+        var start = 0;
+        var end = ar.length-1;
+        var mid = 0;
+        while(start < end){
+            mid = start + (end - start)/2
+            if(ar[start]<ar[mid])
+                start = mid+1
+            else
+                end = mid
+        }
+
+
+
+    }
+}
+
+
+
+def binarySearch(ar:Array[Long], value:Long):Long = {
+
+        var start = 0
+        var end = ar.length-1
+        var mid = 0
+        while(start < end){
+            mid = start + (end - start)/2
+            if(ar(mid) ==  value)
+               end = start
+            else if(ar(mid)<value)
+                start = mid
+            else
+                end = mid - 1
+        }
+
+        mid
+
+
+    }
